@@ -148,6 +148,37 @@
 
 
 
+//=================================================================
+
+
+
+// que. 7 
+
+// Write a program for online shopping:
+// First check if the cart total is ₹1000 or more.
+// If yes, then check if the user is a premium member.
+// If the user is premium, give 20% discount, otherwise give 10% discount.
+// Finally print the final amount after discount
+
+
+
+// let cartTotal = 1500;
+// let isPremiumMember = true;
+
+// let finalAmount;
+
+// if (cartTotal >= 1000) {
+//     if (isPremiumMember) {
+//         finalAmount = cartTotal - (cartTotal * 20 / 100);
+//     } else {
+//         finalAmount = cartTotal - (cartTotal * 10 / 100);
+//     }
+// } else {
+//     finalAmount = cartTotal;
+// }
+
+// console.log("Cart Total: ₹" + cartTotal);
+// console.log("Final Amount: ₹" + finalAmount);
 
 
 
@@ -155,27 +186,104 @@
 
 
 
+// que. 8 
+
+// Check if a number is positive.
+// If yes, then check whether it is even.
+// If it is even, then further check if it is divisible by 4 and print “Positive Even and Divisible by 4”.
+
+
+// let num = 24 ;
+
+// if(num>0){
+//     if(num%2==0){
+//         if(num%4==0){
+//             console.log(`${num} is possitvie , even & divisiable by 4 `)
+
+//         }else{
+//              console.log(`${num} is possitvie , even but not divisiable by 4 `)
+//         }
+
+//     }else{
+//          console.log(`${num} is possitvie and odd number `)
+//     }
+
+// }else if(num==0){
+//         console.log(`${num} is zero number `)
+    
+// }else{
+//      console.log(`${num} is a negitive number `)
+// }
 
 
 
 
 
 
+//=============================================================
 
 
 
 
+// que. 9 
+
+// Create a job eligibility checker with multiple conditions:
+// First check if age is between 21 and 30.
+// If age is valid, then check if the candidate has a graduation degree.
+// If the degree is present, then check if the candidate has at least 2 years of experience.
+// Print “Eligible for Interview” only if all three conditions are true.
+
+
+// let age = 27;
+// let graduationDegree = true ;
+// let experience = 3 ;
+// if(age>=21 && age<=30){
+//     if(graduationDegree){
+//         if(experience>=2){
+//             console.log("Eligible for interview ")
+//         }else{
+//             console.log("Not Eligible for interview ")
+//         }
+
+//     }else{
+//          console.log("Not Eligible for interview ")
+//     }
+
+// }else{
+//      console.log("Not Eligible for interview ")
+// }
 
 
 
 
+//=====================================================================
 
 
+// que. 10 
 
+// Write a nested program for exam eligibility:
+// First check if the student is present.
+// If present, then check if internal marks are ≥ 30.
+// If internal marks are valid, then check if external marks are ≥ 35.
+// Print “Eligible for Final Exam” only when all conditions are satisfied.
 
+// let isStudentPresent = true ;
+// let internalMArks = 45 ;
+// let externalMArks = 72 ;
 
-
-
+// if(isStudentPresent){
+//     if(internalMArks>=30){
+//         if(externalMArks>=35){
+//             console.log("Eligible for Final Exam ")
+//         }else{
+//             console.log("Not Eligible for Final Exam ")
+//         }
+//     }else{
+//         console.log("Not Eligible for Final Exam ")
+//     }
+// }else{
+//     console.log("Not Eligible for Final Exam ")
+// }
 
 
 
