@@ -148,9 +148,95 @@
 //  Given a 3 × 3 matrix, write a JavaScript program to print all the boundary elements in clockwise order, starting from the top-left corner.
 
 
+// var matrix = [
+//     [10, 20, 30],
+//     [40, 50, 60],
+//     [70, 80, 90]
+// ];
+
+
+
+// -----------------------------------------------------------------------------------
+
+
+//  Que. 8
+//  Given a 3 × 3 matrix, write a JavaScript program to print all elements of each row from right to left, starting from the first row.
+
+// var matrix = [
+//     [10, 20, 30],
+//     [40, 50, 60],
+//     [70, 80, 90]
+// ];
+
+// let bag = "";
+
+// for( let i = 0 ; i < matrix.length ; i++ ){
+//     for( let  j = matrix[i].length -1 ; j >= 0 ; j-- ){
+//         bag += matrix[i][j] + " ";
+//     }
+// }
+// console.log((bag));
+
+
+
+// -----------------------------------------------------------------------------------
+
+// Que. 9
+//  Given a 3 × 3 matrix, write a JavaScript program to print all elements column by column, starting from the first column and moving towards the last column.
+
+
+// var matrix = [
+//     [10, 20, 30],
+//     [40, 50, 60],
+//     [70, 80, 90]
+// ];
+
+// let bag = "";
+// for( let i = 0 ; i < matrix.length ; i++ ){
+//     for( let j = 0 ; j < matrix[i].length ; j++ ){
+//         bag += matrix[j][i] + " " ;
+//     };
+// };
+// console.log(bag);
+
+
+
+
+// -----------------------------------------------------------------------------------
+
+
+//  Que. 10
+//  Given a 3 × 3 matrix, write a JavaScript program to print all elements in clockwise spiral order, starting from the top-left corner.
+
 var matrix = [
-    [10, 20, 30],
-    [40, 50, 60],
-    [70, 80, 90]
+    [ 10, 20, 30 ],
+    [ 40, 50, 60 ],
+    [ 70, 80, 90 ],
+    
 ];
 
+let bag = "" ;
+
+for( let i = 0 ; i < matrix.length ; i++ ){
+    if( i == 0 ){
+    for( let j = 0 ; j < matrix[i].length ; j++ ){
+      bag += matrix[i][j] + " " ;
+    } 
+}
+    if( i == 1 ){
+        bag += matrix[i][2] + " ";
+    }
+    if( i == 2){
+        for(let j = matrix[2].length -1 ; j >= 0 ; j-- ){
+            bag += matrix[i][j] + " ";
+        }
+    }
+}
+
+for( let k = 0 ; k < matrix[1].length ; k++ ){
+    if( k !== 2 ){
+    bag += matrix[1][k] + " ";
+    }
+}
+
+console.log(bag);
